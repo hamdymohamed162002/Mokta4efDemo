@@ -1,0 +1,100 @@
+.UserDataContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h3{
+        color: var(--Darkest, #15181E);
+
+        /* H1 */
+        font-family: Segoe UI;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */ 
+    }
+    span{
+        color: var(--Dark, #54565B);
+        text-align: right;
+        
+        /* Title */
+        font-family: Segoe UI;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%; /* 20.8px */ 
+    }
+    p{
+        display: flex;
+        color: var(--Darkest, #15181E);
+text-align: right;
+
+/* Title */
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 20.8px */
+align-items: center;
+gap: 10px;
+    }
+    h4{
+        color: var(--Darkest, #15181E);
+text-align: right;
+
+/* H3 */
+font-family: Segoe UI;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 26.4px */
+    }
+}
+.DataContainer{
+    border-radius: 16px;
+background: var(--White, #FFF);
+padding: 24px;
+margin-top: 32px;
+}
+.Header{
+    border-bottom: 1px solid #DCDCDD;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+.SingleData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-inline-start: 1px solid #DCDCDD;
+
+    p {
+        color: var(--Medium, #96979A);
+        text-align: right;
+        /* Title */
+        font-family: Segoe UI;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 32px;
+        line-height: 130%; /* 20.8px */
+    }
+@media (max-width: 576px) {
+    border: none;
+}
+&:nth-child(3){
+    border: none;
+}
+
+    span {
+        color: var(--Darkest, #15181E);
+        text-align: right;
+        /* H3 */
+        font-family: Segoe UI;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 26.4px */
+    }
+}
+

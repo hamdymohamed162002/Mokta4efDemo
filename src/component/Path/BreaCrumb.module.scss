@@ -1,0 +1,24 @@
+.BreadCrumbContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .BreadCrumbPath{
+        color:#96979A !important;
+        a{
+        color:#96979A !important;
+
+
+        }
+        gap: 10px;
+        display: flex;
+        font-size: 18px;
+        &.Active{
+            color:#303645 !important;
+            a{
+            color:#303645 !important;
+            font-weight: 600;
+            }
+            margin-inline-start: 10px;
+        }
+    }
+}

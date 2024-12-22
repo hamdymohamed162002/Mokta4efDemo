@@ -1,0 +1,139 @@
+.SideBarContainer {
+  background-color: #303645;
+  min-height: 100vh;
+  position: fixed;
+  transition: 0.4s;
+  padding: 24px 8px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 72px;
+  align-items: center;
+  gap: 14px;
+  .SideBarRoute {
+    transition: 000.4s;
+    align-items: center;
+    min-height: 56px;
+    min-width: 56px;
+    border-radius: 8px;
+    display: flex;
+    transition: 0.4s;
+    position: relative;
+    .Badge {
+      position: absolute;
+      padding: 5px;
+      text-wrap: nowrap;
+      background-color: #303645;
+      color: white;
+      transform: translateX(-100%);
+      border-radius: 8px;
+      width: auto;
+      transition: 0.4s;
+      min-width: 100px;
+
+      opacity: 0;
+      z-index: -1;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      .Badge {
+        opacity: 1;
+        z-index: 1000000;
+      }
+    }
+    justify-content: center;
+    p {
+      max-width: 0px;
+      margin: 0px;
+      opacity: 0;
+      transition: 00.4s;
+      white-space: nowrap; /* Prevent line break */
+      overflow: hidden; /* Hide overflow content */
+      text-overflow: ellipsis;
+    }
+    align-items: center;
+    &.active {
+      background-color: white;
+    }
+  }
+  .LogOut{
+    p {
+      max-width: 0px;
+      margin: 0px;
+      opacity: 0;
+      transition: 00.4s;
+      white-space: nowrap; /* Prevent line break */
+      overflow: hidden; /* Hide overflow content */
+      text-overflow: ellipsis;
+    }
+  }
+  &.active {
+    min-width: 240px;
+    .Badge {
+      display: none;
+    }
+    .SideBarRoute {
+      border-radius: 8px;
+      display: flex;
+      transition: 000.4s;
+      align-items: center;
+      gap: 5px;
+      min-width: 100%;
+      padding: 10px;
+      text-decoration: none !important;
+
+      justify-content: start;
+      p {
+        max-width: 150px;
+        opacity: 1;
+        text-decoration: none !important;
+        color: white;
+        transition: 00.4s;
+      }
+      &.active {
+        background-color: white;
+
+        p {
+          color: #303645;
+        }
+      }
+    }
+    .LogOut{
+      p {
+        max-width: 150px;
+        opacity: 1;
+        text-decoration: none !important;
+        color: white;
+        transition: 00.4s;
+      }
+    }
+  }
+}
+.LogOut {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.Lang{
+  cursor: pointer;
+  position: relative;
+  .Btn{
+
+  }
+  .Menu{
+transform: translateY(0%);
+background-color: white;
+padding: 12px;
+border: 1px solid #E5E5E5;
+border-radius: 8px;
+position: absolute;
+div
+{
+display: flex ;
+gap: 5px;
+margin-bottom: 10px;
+}
+  }
+}

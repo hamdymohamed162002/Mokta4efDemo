@@ -1,0 +1,192 @@
+.MainPage {
+  .Header {
+    display: flex;
+    align-items: center;
+    color: var(--Primary, #303645);
+
+    /* Lable */
+    font-family: Segoe UI;
+    font-size: 20px;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 15.4px */
+  }
+  .CardsContainer {
+    margin-block: 16px;
+    .CardNumbers {
+      border-radius: 16px;
+      border: 1px solid var(--Light, #dcdcdd);
+      background: var(--White, #fff);
+
+      padding: 24px;
+      .CardContent {
+        width: 100%;
+        border-inline-start: 2px solid;
+        padding-inline-start: 8px;
+        .CardNumberTitle { 
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h2 {
+            color: var(--Medium, #96979a);
+            text-align: right;
+
+            /* Body */
+            font-family: Segoe UI;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 19.6px */
+          }
+        }
+        .Number{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: 14px;
+
+            h2{
+                color: var(--Dark, #54565B);
+text-align: right;
+
+/* H2 */
+font-family: Segoe UI;
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 32.4px */
+            }
+            div{
+                font-size: 14px;
+                display: flex;
+                gap: 6px;
+                p{
+                    margin: 0px;
+                    color: #96979A;
+                }
+                span{
+                    color: #32A840;
+                    display: flex;gap: 5px;
+                }
+            }
+        }
+      }
+    }
+  }
+}
+.AmountCard{
+  border-radius: 16px;
+  border: 1px solid var(--Light, #dcdcdd);
+  background: var(--White, #fff);
+
+  padding: 24px;
+  h6{
+    color: var(--Dark, #54565B);
+text-align: right;
+
+/* H3 */
+font-family: Segoe UI;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 26.4px */
+margin-bottom: 16px;
+  }
+}
+.PaltFormsContainer{
+  margin-top: 16px;
+  gap: 32px;
+  display: flex ;
+  flex-direction: column;
+  .PaltFormRow{
+    display: flex;
+    gap: 16px;
+    .ProgressContainer{
+      display: flex;
+      flex: 1px;
+      border-radius: 16px;
+    
+
+background: linear-gradient(90deg, rgba(255, 252, 1,0.2) 0%, rgba(255, 252, 1, 0.00) 100%);
+.Progress{
+  border-radius: 16px;
+background: linear-gradient(90deg, #FFFC01 0%, rgba(255, 252, 1, 0.00) 100%, rgba(255, 252, 1, 0.10) 100%);
+width: 60%;
+}
+    }
+    .ProgressContainer2{
+      display: flex;
+      flex: 1px;
+      border-radius: 16px;
+    
+
+background: linear-gradient(90deg, rgba(21, 24, 30,0.2) 0%, rgba(255, 252, 1, 0.00) 100%);
+.Progress{
+  border-radius: 16px;
+
+  background: linear-gradient(90deg, #15181E 0%, rgba(21, 24, 30, 0.10) 100%);
+width: 40%;
+}
+    }
+    .ProgressContainer3{
+      display: flex;
+      flex: 1px;
+      border-radius: 16px;
+    
+
+background: linear-gradient(90deg, rgba(254, 95, 7,0.2) 0%, rgba(255, 252, 1, 0.00) 100%);
+.Progress{
+  border-radius: 16px;
+
+  background: linear-gradient(90deg, rgb(254, 95, 7)  0%, rgba(21, 24, 30, 0.10) 100%);
+width: 80%;
+}
+    }
+    .ProgressContainer4{
+      display: flex;
+      flex: 1px;
+      border-radius: 16px;
+    
+
+background: linear-gradient(90deg, rgba(24, 119, 242,0.2) 0%, rgba(255, 252, 1, 0.00) 100%);
+.Progress{
+  border-radius: 16px;
+
+  background: linear-gradient(90deg,rgb(24, 119, 242)   0%, rgba(21, 24, 30, 0.10) 100%);
+width:20%;
+}
+    }
+  }
+}
+.Number{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 14px;
+
+  h2{
+      color: var(--Dark, #54565B);
+text-align: right;
+
+/* H2 */
+font-family: Segoe UI;
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 32.4px */
+  }
+  div{
+      font-size: 14px;
+      display: flex;
+      gap: 6px;
+      p{
+          margin: 0px;
+          color: #96979A;
+      }
+      span{
+          color: #32A840;
+          display: flex;gap: 5px;
+      }
+  }
+}

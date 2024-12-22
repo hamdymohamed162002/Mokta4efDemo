@@ -1,0 +1,96 @@
+.NavBarContainer{
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    .Hello{
+        h1{
+            color: var(--Darkest, #15181E);
+
+            /* H4 */
+            font-family: Segoe UI;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 22.8px */ 
+        }
+        p{
+            color: var(--Dark, #54565B);
+
+/* Body */
+font-family: Segoe UI;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+        }
+    }
+    .NavBarDetials{
+        display: flex;
+        gap: 28px;
+        align-items: center;
+        .Lang{
+            cursor: pointer;
+            position: relative;
+            .Btn{
+
+            }
+            .Menu{
+transform: translateY(0%);
+background-color: white;
+padding: 12px;
+border: 1px solid #E5E5E5;
+border-radius: 8px;
+position: absolute;
+div
+{
+    display: flex ;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+            }
+        }
+        .Profile{
+            cursor: pointer;
+            position: relative;
+         
+            .Btn{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+img{
+    width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+            }
+            .Menu{
+transform: translateY(0%);
+background-color: white;
+padding: 12px;
+border: 1px solid #E5E5E5;
+border-radius: 8px;
+position: absolute;
+div
+{
+    display: flex ;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+            }
+        }
+    }
+}
+.MenuIcon{
+    display: none;
+}
+@media(max-width:991px){
+    .Profile{
+        display: none;
+    }
+    .Lang{
+        display: none;
+    }
+    .MenuIcon{
+        display: flex;
+    }
+}

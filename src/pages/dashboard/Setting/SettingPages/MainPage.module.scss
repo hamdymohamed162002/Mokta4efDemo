@@ -1,0 +1,75 @@
+.PageContainer{
+ 
+    padding: 32px;
+    border-radius: 8px;
+background: var(--White, #FFF);
+display: flex;
+flex: 1;
+flex-direction: column;
+.PageHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    h3{
+        color: var(--Darkest, #15181E);
+        text-align: right;
+        
+        /* H3 */
+        font-family: Segoe UI;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 26.4px */ 
+    }
+}
+}
+.ExportBtn{
+    padding: 12px 18px ;
+    border-radius: 8px;
+    border: 1px solid var(--Primary, #303645);
+    background: var(--Primary, #303645);
+    
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    transition: 0.4s;
+    color: white;
+    display: flex;
+    gap: 10px;
+cursor: pointer;
+align-items: center;
+&:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 4px 6px 3px rgb(159 159 159 / 45%);
+}
+}
+.PageBody{
+    margin-top: 32px;
+}
+.PlatformRow{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #DCDCDD 1px solid;
+padding-bottom: 16px;
+margin-bottom: 16px;}
+.FaqRow{
+    display: flex;
+    gap: 16px;
+    .FaqContntent{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .FAqAnswer{
+            max-width: 450px;
+        }
+    }
+    .FaqHeader{
+        display: flex;
+        justify-content: space-between;
+     
+       
+    }
+    border-bottom: 1px solid #DCDCDD;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}

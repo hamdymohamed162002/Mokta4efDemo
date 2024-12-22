@@ -1,0 +1,248 @@
+.SocialScroll {
+  display: flex;
+  gap: 24px;
+  padding-inline: 8px;
+
+  div {
+    cursor: pointer;
+    transition: 0.4s;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+  }
+  .Active {
+    border-bottom: 2px solid var(--Primary, #303645);
+  }
+}
+.ScrollContainer {
+  margin-bottom: -10px;
+  overflow-x: scroll;
+  &::-webkit-slider-thumb {
+    display: none;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .SocialScroll {
+    min-width: 230px;
+  }
+}
+.ExportBtn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--Primary, #303645);
+  background: var(--Primary, #303645);
+
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  transition: 0.4s;
+  color: white;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 4px 6px 3px rgb(159 159 159 / 45%);
+  }
+}
+.NumberCard {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--Light, #dcdcdd);
+  background: var(--White, #fff);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  span {
+    color: var(--Primary, #303645);
+
+    /* H1 */
+    font-family: Segoe UI;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+  }
+  transition: 0.4s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 4px 6px 3px rgba(159, 159, 159, 0.45);
+  }
+}
+.Tabs {
+  display: flex;
+  justify-content: space-between;
+  color: #96979a;
+
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    background-color: #dcdcdd;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .TabContainer {
+    display: flex;
+    gap: 50px;
+  }
+  .SingleTab {
+    transition: 0.4s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    &.Active {
+      color: #2f65cc;
+      border-bottom: 2px solid #2f65cc;
+
+      position: relative;
+    }
+  }
+}
+
+.ChatWidget {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .Header {
+    h3 {
+      color: var(--Darkest, #15181e);
+      text-align: right;
+
+      /* Title */
+      font-family: Segoe UI;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 20.8px */
+    }
+  }
+  .Profile {
+    .Pedining {
+      color: var(--White, #fff);
+      text-align: right;
+      padding: 4px 8px;
+      /* Lable */
+      border-radius: 16px;
+      background: var(--Orange, #e5a240);
+      font-family: Segoe UI;
+      font-size: 11px;
+      font-style: normal;
+
+      line-height: 140%; /* 15.4px */
+    }
+    margin-top: 16px;
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+    p {
+      overflow: hidden;
+      color: var(--Dark, #54565b);
+      text-align: right;
+      text-overflow: ellipsis;
+
+      /* Body */
+      font-family: Segoe UI;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 19.6px */
+    }
+    span {
+      display: block;
+      color: var(--Dark, #54565b);
+
+      /* Lable */
+      font-family: Segoe UI;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 15.4px */
+    }
+    .Close{
+      border-radius: 8px;
+background: var(--Primary, #303645);
+padding: 8px 14px;
+text-align: center;
+color: white;
+cursor: pointer;
+/* Shadow/xs */
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+    .Btns{
+      display: flex;
+  
+    }
+    .Solve{
+cursor: pointer;
+
+      border-radius: 8px;
+      background: var(--Primary, #32A840);
+      padding: 8px 14px;
+      text-align: center;
+      color: white;
+      /* Shadow/xs */
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+  }
+  .ChatBody{
+    display: flex;
+    margin-top: 16px;
+    flex: 1;
+    min-height: 300px;
+    max-height: 300px;
+
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 8px; /* Set the width of the scrollbar */
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #303645; /* Set the color of the scrollbar thumb */
+      border-radius: 6px; /* Set the border radius of the thumb */
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: #eee;
+      border-radius: 6px;  /* Set the color of the scrollbar track */
+    }
+  
+    /* Optionally, you can style the corners of the scrollbar */
+    &::-webkit-scrollbar-corner {
+      background-color: #eee;
+    }
+  }
+}
+
+.ChatWidgetCOntainer{
+  height: 100%;
+}
+.FullHeight{
+  padding:8px ;
+}
+.SendInput{
+  border-radius: 8px;
+border: 1px solid var(--Light, #DCDCDD);
+background: var(--White, #FFF);
+margin-top: 20px;
+/* Shadow/xs */
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: flex;
+  padding: 12px 16px;
+  gap: 16px;
+  input{
+    display: flex;
+    flex: 1;
+    border: none;
+&:focus{
+  outline: none;
+}
+  }
+}

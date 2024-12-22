@@ -1,0 +1,49 @@
+.Container{
+    h1{
+        color: var(--Dark, #54565B);
+text-align: right;
+
+/* H1 */
+font-family: Segoe UI;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 38.4px */
+margin-block: 16px;
+    }
+    .SideBar{
+        position: relative;
+        z-index: 1000;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+
+        .Route{
+            padding: 8px 16px;
+            border-radius: 8px;
+            color: #54565B !important;
+      &:focus{
+        text-decoration: none !important;
+      }
+      &:hover{
+        text-decoration: none !important;
+      }
+transition: 0.4s;
+/* Title */
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 20.8px */
+background-color: transparent;
+&.Active{
+
+    color:white !important;
+
+background: var(--Primary, #303645);
+}
+             
+        }
+    }
+}

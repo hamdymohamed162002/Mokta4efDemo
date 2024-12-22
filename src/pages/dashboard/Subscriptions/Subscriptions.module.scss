@@ -1,0 +1,48 @@
+.SocialScroll{
+    display: flex;
+    gap: 24px;
+    padding-inline: 8px;
+
+    div{
+        cursor: pointer;
+        transition: 0.4s;
+        padding-bottom: 8px;
+        border-bottom: 2px solid transparent;
+    }
+    .Active{
+        border-bottom: 2px solid var(--Primary, #303645);
+    }
+}
+.ScrollContainer{
+    margin-bottom: -10px;
+    overflow-x:scroll;
+    &::-webkit-slider-thumb{
+        display: none;
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .SocialScroll{
+        min-width: 230px;
+       
+    }
+}
+.ExportBtn{
+    padding: 12px 18px ;
+    border-radius: 8px;
+    border: 1px solid var(--Primary, #303645);
+    background: var(--Primary, #303645);
+    
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    transition: 0.4s;
+    color: white;
+    display: flex;
+    gap: 10px;
+cursor: pointer;
+align-items: center;
+&:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 4px 6px 3px rgb(159 159 159 / 45%);
+}
+}

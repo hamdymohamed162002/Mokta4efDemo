@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon"  href="/AppIcon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Muktashef</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+.loaderPage{
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.LoaderContainer{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.LoaderContainer svg{
+  animation: scale 2s infinite;
+}
+.LoaderContainer svg path{
+animation: colorChanger 2s infinite;
+stroke-width: 1.5;
+ stroke:#303645 ;
+}
+@keyframes colorChanger{
+  0%{
+    fill: white;
+    stroke-width: 1.5;
+ stroke:#303645 ;
+  }
+  50%{
+    fill: #303645;
+    stroke-width: 1.5;
+    stroke:#303645 ;
+  }
+  100%{
+    fill: white;
+    stroke-width: 1.5;
+ stroke:#303645 ;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.5);
+  
+  }
+  50% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.5);
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loaderPage">
+<div class="LoaderContainer">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 28 24" fill="none">
+    <path d="M24.2049 15.1551C24.2049 18.6337 24.7996 21.627 27.8002 21.627V24C22.5289 24 19.7986 21.0607 19.7986 15.236V6.90337C19.7986 5.36629 18.6633 4.15281 17.0954 4.15281C16.2844 4.15281 15.6357 4.44944 15.0409 5.09663V5.06966C14.4462 5.74382 14.1759 6.57978 14.1759 7.60449V17.2854H10.0129V6.90337C10.0129 5.28539 8.82351 4.15281 7.20157 4.15281C5.76885 4.15281 4.33614 5.52809 4.33614 7.57753V17.2315H0.200195V0.350562H4.33614V0.72809C5.28227 0.269663 6.28247 0 7.3097 0C9.49931 0 11.0942 0.593258 12.3377 2.0764C13.7164 0.674157 15.2842 0 17.2846 0C20.988 0 24.2049 3.15506 24.2049 6.8764V15.1551Z" fill="white"/>
+</svg>
+
+</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

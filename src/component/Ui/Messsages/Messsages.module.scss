@@ -1,0 +1,20 @@
+.MyMessageProfile{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.MyMessageBody{
+    border-radius: 0px 16px 16px 16px;
+    background: var(--Primary, #303645);
+    color: white;
+    padding: 8px 16px;
+}
+.NotMyMessageBody{
+    border-radius: 0px 16px 16px 16px;
+    background: var(--Primary, #DCDCDD);
+    color: #54565B;
+    padding: 8px 16px;
+}
